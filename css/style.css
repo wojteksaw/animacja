@@ -1,6 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 @keyframes animation-div {
@@ -9,7 +13,7 @@ body {
     }
 
     50% {
-        transform: translateX(300px) translateY(300px);
+        transform: translate(300px,300px)
     }
 
     75% {
@@ -21,15 +25,11 @@ body {
     width: 400px;
     height: 400px;
     background-color: beige;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .div-move {
     width: 100px;
     height: 100px;
     background-color: red;
-    animation: animation-div 4s linear infinite;
+    animation: animation-div 10s linear infinite;
 }
